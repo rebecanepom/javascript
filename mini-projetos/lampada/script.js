@@ -1,34 +1,24 @@
 let lampada = document.querySelector('div#lamp')
-lampada.addEventListener('mouseenter', entrar)
-lampada.addEventListener('dblclick', clicar) /* clicar 2 vezes */
-lampada.addEventListener('mouseout', sair)
+lampada.addEventListener('mouseenter', entrarLigar)
+lampada.addEventListener('dblclick', clicarQuebrar) /* clicar 2 vezes */
+lampada.addEventListener('mouseout', sairApagar)
 
-function entrar() {
+function entrarLigar() {
     lampada.style.background = 'url(imagens/lampada-acesa.png) center center /cover no-repeat'
 }
 
-function sair() {
-    if (lampBroken()) {
-        lampada.style.background = 'url(imagens/lampada-apagada.png) center center /cover no-repeat'
-    }
+function sairApagar() {
+    lampada.style.background = 'url(imagens/lampada-apagada.png) center center /cover no-repeat'
 }
 
-function clicar() {
+function clicarQuebrar() {
     lampada.style.background = 'url(imagens/lampada-quebrada.png) center center /cover no-repeat'
 }
 
 function ligar() {
-    if (lampBroken()) {
-        lampada.style.background = 'url(imagens/lampada-acesa.png) center center /cover no-repeat'
-    }
+    lampada.style.background = 'url(imagens/lampada-acesa.png) center center /cover no-repeat'
 }
 
 function desligar() {
-    if (lampBroken()) {
-        lampada.style.background = 'url(imagens/lampada-apagada.png) center center /cover no-repeat'
-    }
-}
-
-function lampBroken() {
-    return lamp.style.indexOf('quebrada') > -1
+    lampada.style.background = 'url(imagens/lampada-apagada.png) center center /cover no-repeat'
 }
