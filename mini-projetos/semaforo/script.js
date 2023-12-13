@@ -21,3 +21,7 @@ function luzYellow() {
 function luzGreen() {
     img.setAttribute('src', 'imagens/semaforo-green.png')
 }
+
+function luzes() {
+    
+}
