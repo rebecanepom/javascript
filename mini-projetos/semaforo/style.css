@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+div#semaforo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#semaforo > img {
+    height: 500px;
+}
+
+div#botoes {
+    margin: 30px;
+}
+
+div#botoes > button {
+    width: 80px;
+    cursor: pointer;
+}
