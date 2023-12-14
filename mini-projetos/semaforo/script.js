@@ -5,6 +5,7 @@ let yellow = document.querySelector('button#yellow')
 let green = document.querySelector('button#green')
 let auto = document.querySelector('button#auto')
 
+
 red.addEventListener('click', luzRed)
 yellow.addEventListener('click', luzYellow)
 green.addEventListener('click', luzGreen)
@@ -22,6 +23,12 @@ function luzGreen() {
     img.setAttribute('src', 'imagens/semaforo-green.png')
 }
 
+let changeColor = () => {
+    let colors = ['red', 'yellow', 'green']
+    let color = colors[colorIndex]
+    colorIndex++
+}
 function luzes() {
-    
+    setInterval(changeColor, 1000)
+    img.setAttribute(changeColor)
 }

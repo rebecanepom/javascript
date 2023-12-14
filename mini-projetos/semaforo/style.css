@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -7,20 +13,11 @@ main {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-}
-
-div#semaforo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 5vh; /*distância entre as divs*/
 }
 
 div#semaforo > img {
     height: 500px;
-}
-
-div#botoes {
-    margin: 30px;
 }
 
 div#botoes > button {
