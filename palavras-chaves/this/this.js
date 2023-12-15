@@ -1,3 +1,24 @@
+// Funções Arrow (=>)
+// Nas arrow functions (funções seta), o this é definido lexicalmente, isto é, seu valor é definido pelo contexto d execução onde está inserido. Em um código global, this assume o objeto glboal:
+
+// Contexto de criação: global
+const arrowFunctionThis = () => { console.log(this)}
+
+// Contexto de criação: objeto / errado
+const arrowFunctionThis = {
+    prop: 150,
+    arrowF: () => {console.log(this)}
+}
+
+// Contexto de criação: objeto / correto
+const obj1 = {
+    exemplo1: 'exemplo1',
+    mostraThis: function() {
+        console.log( (() => this)() )
+    }
+}
+
+
 /* O modo estrito ajuda a capturar erros comuns de codificação e impede o uso de recursos problemáticos que podem levar a bugs. Por exemplo, ele não permite a atribuição de valores a variáveis não declaradas, o que ajuda a evitar a criação acidental de variáveis globais.O modo estrito ajuda a capturar erros comuns de codificação e impede o uso de recursos problemáticos que podem levar a bugs. Por exemplo, ele não permite a atribuição de valores a variáveis não declaradas, o que ajuda a evitar a criação acidental de variáveis globais. 
 
 E como usar? Basta adicionar 'use strict' no topo do seu código, antes de qualquer outra coisa ou chama-los dentro de funções. Se você inserir dentro no topo do seu código se aplicará para todo seu código.E como usar? Basta adicionar 'use strict' no topo do seu código, antes de qualquer outra coisa ou chama-los dentro de funções. Se você inserir dentro no topo do seu código se aplicará para todo seu código.*/
