@@ -2,7 +2,7 @@
 // Nas arrow functions (funções seta), o this é definido lexicalmente, isto é, seu valor é definido pelo contexto d execução onde está inserido. Em um código global, this assume o objeto glboal:
 
 // Contexto de criação: global
-const arrowFunctionThis = () => { console.log(this)}
+//const arrowFunctionThis = () => { console.log(this)}
 
 // Contexto de criação: objeto / errado
 const arrowFunctionThis = {

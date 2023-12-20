@@ -64,12 +64,12 @@ setTimeout(() => {
 
 
 // NÃO USAR ARROW 
-let pessoa = {
+/* let pessoa = {
     nome: 'Jungkook'
     sayName: () => {
         console.log(this.nome)
         console.log(this)
     }
-}
+} */
 
 pessoa.sayName()
