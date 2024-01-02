@@ -26,11 +26,48 @@
         console.log(`Cart quantity: ${cartQuantity}`);
     ">+3</button>
 
+    <!-- exercise
+        5h. add 2 more buttons '+4' and '+5', which increase the quantity by 4 and 5 when you click them. Try using +=
+
+        5i. add a button 'Remove from cart', which decreases the cart quantity by 1.
+
+        5j. add 2 buttons '-2' and '-3', which decrease the quantity by 2 and 3.
+
+        5k. use the shortcuts -- and -= in 5i and 5.
+    -->
+
+    <button onclick="
+        cartQuantity += 4;
+        console.log(`Cart quantity: ${cartQuantity}`);
+    ">+4</button>
+
+    <button onclick="
+        cartQuantity += 5;
+        console.log(`Cart quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <button onclick="
+        //cartQuantity -= 1;
+        cartQuantity --;
+        console.log(`Cart quantity: ${cartQuantity}`);
+    ">Remove from cart</button>
+
+    <button onclick="
+        cartQuantity -= 2;
+        console.log(`Cart quantity: ${cartQuantity}`);
+    ">-2</button>
+    <button onclick="
+        cartQuantity -= 3;
+        console.log(`Cart quantity: ${cartQuantity}`);
+    ">-3</button>
+
     <button onclick="
         cartQuantity = 0;
         console.log('Cart was reset.');
         console.log(`Cart quantity: ${cartQuantity}`);
     ">Reset Cart</button>
+
+    
 
     <!--
         VARIABLE RE-ASSIGNMENT SHORTCUTS: 
