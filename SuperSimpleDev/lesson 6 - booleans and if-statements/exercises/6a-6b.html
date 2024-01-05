@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+       6a. Create a variable called 'hour' and save the current hour of the day (use 24-hour format aand save it as a number between 0 and 23).
+        * if hour is between 6 and 12, display 'Good morning!' in the console.
+        * if hour is between 13 and 17, display 'Good afternoon!' in the console.
+        * otherwise, display 'Good night!' in the console.
+
+        6b. Continuing from 6a, try changing the value in the 'hour' variable to make it display different messages.
+    -->
+    <script>
+        const now = new Date()
+        const hour = now.getHours()
+
+        if (hour >= 6 && hour <= 12) {
+            console.log('Good morning!')
+        } else if (hour >= 13 && hour <= 17) {
+            console.log('Good afternoon!')
+        } else {
+            console.log('Good night!')
+        }
+    </script>
+</body>
+</html>
