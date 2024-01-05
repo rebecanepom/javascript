@@ -11,6 +11,7 @@
     </p>
 
     <button onclick="
+        // Computer randomly selects a move
         const randomNumber = Math.random();
 
         let computerMove = '';
@@ -23,6 +24,7 @@
             computerMove = 'scissors';
         }
 
+        // Compare the moves to get the result
         let result = '';
 
         if (computerMove === 'rock') {
@@ -33,6 +35,7 @@
             result = 'You win.';
         }
 
+        // Display the result in a popup
         alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
     ">Rock</button>
 
