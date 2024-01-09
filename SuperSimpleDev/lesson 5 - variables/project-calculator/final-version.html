@@ -44,10 +44,10 @@
 <body>
     <div id="calc-display"></div>
     <p>
-        <button class="calc-btns gray-btns" onclick="calculation += 1; console.log(calculation);">1</button>
-        <button class="calc-btns gray-btns" onclick="calculation += 2; console.log(calculation);">2</button>
+        <button class="calc-btns gray-btns" onclick="calc(1);">1</button>
+        <button class="calc-btns gray-btns" onclick="calc(2);">2</button>
         <button class="calc-btns gray-btns" onclick="calculation += 3; console.log(calculation);">3</button>
-        <button class="calc-btns orange-btns" onclick="calculation += ' + '; console.log(calculation);">+</button>
+        <button class="calc-btns orange-btns" onclick="calc(' + ');">+</button>
     </p>
 
     <p>
@@ -67,7 +67,7 @@
     <p>
         <button class="calc-btns gray-btns" onclick="calculation += 0; console.log(calculation);">0</button>
         <button class="calc-btns gray-btns" onclick="calculation += '.'; console.log(calculation);">.</button>
-        <button class="calc-btns gray-btns" onclick="calculation = eval(calculation); console.log(calculation)">=</button>
+        <button class="calc-btns gray-btns" onclick="calculation = eval(calculation); calc(calculation)">=</button>
         <button class="calc-btns orange-btns" onclick="calculation += ' / '; console.log(calculation);">/</button>
     </p>
 
@@ -76,10 +76,21 @@
     </p>
 
     <script>
+        /*
+        let calculation = '';
+        function updateCalculation(value) {
+            return calculation += value;
+        }
+        */
         let calculation = '';
         let display = document.querySelector('div#calc-display');
 
-        function calcDisplay() {
-            display.innerHTML = calculation.value
+        function calc(value) {
+            return display.innerHTML = calculation += value;
+        }
+
+        function calcDisplay(tela) {
+            display.innerHTML = calc();
+            return;
         }
     </script>
