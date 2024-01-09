@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        7f. Create a function 'convertTemperature(degrees, unit)' that takes a number and a unit ('C' or 'F'), and converts it into the other unit.
+         * convertTemperature(25, 'C') => '77F'
+         * convertTemperature(86, 'F') => '30C'
+         Note: return a string, and try to reuse the functions from 7d and 7e.
+    -->
+    <script>
+        function convertTemperature(degrees, unit) {
+            if (unit === 'C') {
+                return `${(degrees * 9 / 5) + 32}F`;
+            } else if (unit === 'F') {
+                return `${(degrees - 32) * 5 / 9}C`;
+            }
+        }
+
+        console.log(convertTemperature(25, 'C'));
+        console.log(convertTemperature(86, 'F'));
+    </script>
+</body>
+</html>
