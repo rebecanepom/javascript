@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        7c. Try calling greet() without a name (it will display 'Hello undefind!'). Modify the function so that if 'name' is undefind, it will display 'Hi there!' instead.
+        (Hint: use an if-statement. Since undefind is a falsy value, you can use: if (!name) {...} to check if 'name' is undefined).
+    -->
+    <script>
+        function greet(name) {
+            if (!name) {
+                console.log('Hi there!');
+            } else {
+                console.log(`Hello! ${name}`);
+            }
+        }
+
+        greet();
+        greet('Jungkook');
+    </script>
+</body>
+</html>
