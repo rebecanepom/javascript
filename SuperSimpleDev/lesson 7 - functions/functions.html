@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!--
+        What is a function?
+        A function let us reuse code.
+
+        Why do we use functions?
+        A function let us reuse code.
+
+        Rules for function names:
+         1. Can't use special words. Example: function
+         2. Can't start with a number.
+         3. Can't use special characters except: $ _
+         Best practice = use camelCase
+    -->
+    <script>
+        /*
+        function function1() {
+            console.log('hello');
+            console.log(2 + 2);
+        }
+
+        function1();
+        function1();
+        */
+
+        // Parameter
+        /*
+            Os parâmetros são o oposto de uma instrução de retorno.
+            Return =  obtém um valor de uma função.
+            Parameter = coloca um valor em uma função.
+
+            Rules for parameter names:
+            1. Can't use special words. Example: function
+            2. Can't start with a number.
+            3. Can't use special characters except: $ _
+            Best practice = use camelCase
+        */
+
+        function calculateTax(cost, taxPercent = 0.1) {
+            console.log(cost * taxPercent);
+        }
+
+        calculateTax(2000, 0.2);
+        calculateTax(5000);
+    </script>
+</body>
+</html>
