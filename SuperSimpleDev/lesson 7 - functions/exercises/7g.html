@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        7g. Create a copy of the Calculator project from exercise 5r (if you didn't do 5r, copy the code for 5r from the solutions).
+         * Notice there's a lot of duplicated code in the buttons.
+         * Create a function 'updateCalculation' and reuse the code.
+    -->
+    <p>Calculator</p>
+    <p>
+        <button onclick="console.log(updateCalculation(1));">1</button>
+
+        <button onclick="console.log(updateCalculation(2));">2</button>
+
+        <button onclick="console.log(updateCalculation(3));">3</button>
+
+        <button onclick="console.log(updateCalculation(' + '));">+</button>
+    </p>
+
+    <p>
+        <button onclick="console.log(updateCalculation(4));">4</button>
+
+        <button onclick="console.log(updateCalculation(5));">5</button>
+
+        <button onclick="console.log(updateCalculation(6));">6</button>
+
+        <button onclick="console.log(updateCalculation(' - '));">-</button>
+    </p>
+
+    <p>
+        <button onclick="console.log(updateCalculation(7));">7</button>
+
+        <button onclick="console.log(updateCalculation(8));">8</button>
+
+        <button onclick="console.log(updateCalculation(9));">9</button>
+        
+        <button onclick="console.log(updateCalculation(' * '));">*</button>
+    </p>
+    
+    <p>
+        <button onclick="console.log(updateCalculation(0));">0</button>
+
+        <button onclick="console.log(updateCalculation('.'));">.</button>
+
+        <button onclick="calculation = eval(calculation); console.log(calculation)">=</button>
+
+        <button onclick="console.log(updateCalculation(' / '));">/</button>
+    </p>
+
+    <p>
+        <button onclick="calculation = ' '; console.log(calculation);">Clear</button>
+    </p>
+
+    <script>
+        let calculation = '';
+        function updateCalculation(value) {
+            return calculation += value;
+        }
+    </script>
+</body>
+</html>
