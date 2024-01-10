@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <!--
+        What is an object?
+        An object groups multiple values together.
+
+        Why we use objects?
+        - make our code more organized
+    -->
+    <script>
+        /* const product = {
+            name: 'socks',
+            price: 1090
+        };
+
+        console.log(product);
+        // acessar valores:
+        console.log(product.name);
+        console.log(product.price);
+        // alterar valor:
+        product.name = 'cotton socks';
+        console.log(product);
+        // adicionar um valor:
+        product.newProperty = true;
+        console.log(product);
+        // excluir uma propriedade:
+        delete product.newProperty;
+        console.log(product); */
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day',
+            // object inside object:
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            // function inside object:
+            fun: function function1() {
+                console.log('function inside object');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+        // acessar objeto dentro do objeto
+        console.log(product2.rating.count);
+        console.log(product2['rating']['stars']);
+        // acessar função dentro de um objeto
+        product2.fun();
+
+        console.log(typeof console.log);
+
+        // JSON
+        // converter um objeto JavaScript em JSON:
+        console.log(JSON.stringify(product2));
+        // converter JSON em objeto JavaScript:
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+
+        // localStorage
+    </script>
+</body>
+</html>
