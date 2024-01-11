@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        8c. Using bracket notation, add a property 'delivery-time' to the object with the value '3 days'. Display the update object in the console.
+    -->
+    <script>
+        const product = {
+            name: 'basketball',
+            price: 2095
+        };
+        console.log(product);
+
+        product.price += 500;
+        console.log(product);
+
+        product['delivery-time'] = '3 days';
+        console.log(product);
+    </script>
+</body>
+</html>
