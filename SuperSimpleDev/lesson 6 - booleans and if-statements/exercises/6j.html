@@ -10,18 +10,11 @@
         6j. (Challenge) Instead of using if-statements in the previous exercises, try switching them into ternary operators (condition ? A : B).
     -->
     <script>
-        // Exercise 6a-6b
-        const now = new Date()
-        const hour = now.getHours()
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
 
-        
-        /* if (hour >= 6 && hour <= 12) {
-            console.log('Good morning!')
-        } else if (hour >= 13 && hour <= 17) {
-            console.log('Good afternoon!')
-        } else {
-            console.log('Good night!')
-        } */
+        const guess = 'heads';
+        console.log(guess === result ? 'You win!' : 'You lose!');
     </script>
 </body>
 </html>
